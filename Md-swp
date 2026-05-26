@@ -15,7 +15,7 @@ contract="33ef96...3289e1d"
 min_balance=43
 check_time=60
 
-# cek balance
+# check balance
 check_balance() {
     echo -e "${BLUE}[$(date)] checking balance...${NC}"
 
@@ -55,7 +55,7 @@ do_swap() {
     fi
 }
 
-# cek status tx
+# check status tx
 check_tx() {
     tx=$(curl -s "https://wallet.cantor8.tech/api/transaction/status?address=$wallet" | jq -r '.status')
 
